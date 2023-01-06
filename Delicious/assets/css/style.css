@@ -1,16 +1,12 @@
-/**
-* Template Name: Delicious - v4.10.0
-* Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+/*the new world bar css
 */
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Poppins", sans-serif;
-  color: #444444;
+  font-family: "cormorant", garamond;
+  color: #000000;
 }
 
 a {
@@ -29,7 +25,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Satisfy", sans-serif;
+  font-family: "garamond", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -37,9 +33,8 @@ h6 {
 --------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
+  opacity: 1;
+  left: 15px;
   bottom: 15px;
   z-index: 996;
   background: #ffb03b;
@@ -50,7 +45,7 @@ h6 {
 }
 
 .back-to-top i {
-  font-size: 28px;
+  font-size: 30px;
   color: #fff;
   line-height: 0;
 }
@@ -116,14 +111,6 @@ h6 {
 #header.header-scrolled {
   top: 0;
   background: rgba(26, 24, 22, 0.85);
-}
-
-#header .logo h1 img {
-  font-size: 130px;
-  margin: 0;
-  line-height: 1;
-  font-weight: 400;
-  letter-spacing: 3px;
 }
 
 #header .logo h1 a,
@@ -195,8 +182,8 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 24px;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   color: white;
   white-space: nowrap;
   transition: 0.3s;
@@ -204,7 +191,7 @@ h6 {
 
 .navbar a i,
 .navbar a:focus i {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 0;
   margin-left: 5px;
 }
@@ -216,69 +203,10 @@ h6 {
   color: #ffb03b;
 }
 
-.navbar .dropdown ul {
-  display: block;
-  position: absolute;
-  left: 24px;
-  top: calc(100% + 30px);
-  margin: 0;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.3s;
-  border-radius: 4px;
-}
-
-.navbar .dropdown ul li {
-  min-width: 200px;
-}
-
-.navbar .dropdown ul a {
-  padding: 10px 20px;
-  font-size: 14px;
-  font-weight: 400;
-  color: #433f39;
-}
-
-.navbar .dropdown ul a i {
-  font-size: 12px;
-}
-
-.navbar .dropdown ul a:hover,
-.navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover > a {
-  color: #ffb03b;
-}
-
-.navbar .dropdown:hover > ul {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
-}
-
-.navbar .dropdown .dropdown ul {
-  top: 0;
-  left: calc(100% - 30px);
-  visibility: hidden;
-}
-
-.navbar .dropdown .dropdown:hover > ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-  visibility: visible;
-}
-
 @media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
-  }
-
-  .navbar .dropdown .dropdown:hover > ul {
-    left: -100%;
+  .navbar a,
+  .navbar a:focus {
+    font-size: 20px;
   }
 }
 
@@ -340,52 +268,13 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #433f39;
+  color: #000;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
   color: #ffb03b;
-}
-
-.navbar-mobile .getstarted,
-.navbar-mobile .getstarted:focus {
-  margin: 15px;
-}
-
-.navbar-mobile .dropdown ul {
-  position: static;
-  display: none;
-  margin: 10px 20px;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 1;
-  visibility: visible;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-}
-
-.navbar-mobile .dropdown ul li {
-  min-width: 200px;
-}
-
-.navbar-mobile .dropdown ul a {
-  padding: 10px 20px;
-}
-
-.navbar-mobile .dropdown ul a i {
-  font-size: 12px;
-}
-
-.navbar-mobile .dropdown ul a:hover,
-.navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover > a {
-  color: #ffb03b;
-}
-
-.navbar-mobile .dropdown > .dropdown-active {
-  display: block;
 }
 
 /*--------------------------------------------------------------
@@ -448,8 +337,9 @@ h6 {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
-  color: #fff;
+  color: #ff9b08;
   font-size: 27px;
+  font-family: dosis;
 }
 
 #hero .carousel-inner .carousel-item {
@@ -652,6 +542,7 @@ section {
 --------------------------------------------------------------*/
 .about {
   background: #fffaf3;
+  padding: 5px 5px;
 }
 
 .about .content {
@@ -659,20 +550,21 @@ section {
 }
 
 .about .content h3 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 34px;
-  color: #5f5950;
+  color: #000;
 }
 
 .about .content h4 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   margin-top: 5px;
+  color: blue;
 }
 
 .about .content p {
-  font-size: 15px;
-  color: #848484;
+  font-size: 20px;
+  color: #000;
 }
 
 .about .content ul {
@@ -825,7 +717,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Whu Us
+# Why Us
 --------------------------------------------------------------*/
 .why-us .box {
   padding: 50px 30px;
@@ -846,12 +738,12 @@ section {
   font-weight: 600;
   padding: 0;
   margin: 20px 0;
-  color: #6c665c;
+  color: #333333;
 }
 
 .why-us .box p {
-  color: #aaaaaa;
-  font-size: 15px;
+  color: #222222;
+  font-size: 16px;
   margin: 0;
   padding: 0;
 }
@@ -921,8 +813,8 @@ section {
   right: 0;
   top: -4px;
   z-index: 1;
-  color: #dad8d4;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #333;
+  font-family: garamond;
 }
 
 .menu .menu-content a {
@@ -944,9 +836,9 @@ section {
 
 .menu .menu-ingredients {
   font-style: italic;
-  font-size: 14px;
-  font-family: "Comic Neue", sans-serif;
-  color: #948c81;
+  font-size: 17px;
+  font-family: cormorant;
+  color: #444;
 }
 
 /*--------------------------------------------------------------
@@ -964,13 +856,15 @@ section {
   border: 0;
   padding: 12px 15px 12px 0;
   transition: 0.3s;
-  color: #433f39;
+  color: #000;
   border-radius: 0;
   border-right: 2px solid #e8e7e4;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 20px;
 }
-
+.specials .fst-italic {
+  font-size: 19px !important;
+}
 .specials .nav-link:hover {
   color: #ffb03b;
 }
@@ -986,14 +880,14 @@ section {
 }
 
 .specials .details h3 {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #433f39;
+  color: #18d26e;
 }
 
 .specials .details p {
-  color: #777777;
+  color: #222222;
 }
 
 .specials .details p:last-child {
@@ -1019,6 +913,10 @@ section {
   background: url(../img/events-bg.jpg) center center no-repeat;
   background-size: cover;
   position: relative;
+}
+.events .fst-italic {
+  font-size: 18px;
+  padding: 20px 5px;
 }
 
 .events::before {
@@ -1062,7 +960,7 @@ section {
 
 .events .event-item .price {
   font-size: 26px;
-  font-family: "Poppins", sans-serif;
+  font-family: garamond;
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -1075,14 +973,19 @@ section {
   list-style: none;
   padding: 0;
 }
-
+.events img {
+  height: 400px;
+  object-fit: contain;
+  text-align: center;
+  width: 800px;
+}
 .events .event-item ul li {
   padding-bottom: 10px;
 }
 
 .events .event-item ul i {
   font-size: 20px;
-  padding-right: 4px;
+  padding: 10px 4px;
   color: #ffb03b;
 }
 
@@ -1105,7 +1008,18 @@ section {
 .events .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #ffb03b;
 }
-
+@media (max-width: 768px) {
+  .events .event-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .events img {
+    width: 400px;
+    height: 500px;
+  }
+}
 /*--------------------------------------------------------------
 # Book A Table
 --------------------------------------------------------------*/
@@ -1271,11 +1185,11 @@ section {
 .chefs .member h4 {
   font-weight: 500;
   margin-bottom: 10px;
-  font-size: 16px;
-  color: #6c665c;
+  font-size: 18px;
+  color: #333333;
   position: relative;
   padding-bottom: 10px;
-  font-family: "Poppins", sans-serif;
+  font-family: garamond;
 }
 
 .chefs .member h4::after {
@@ -1292,7 +1206,7 @@ section {
 .chefs .member span {
   font-style: italic;
   display: block;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .chefs .member .social {
@@ -1372,14 +1286,14 @@ section {
   font-weight: bold;
   margin: 10px 0 5px 0;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: cormorant;
 }
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
   color: #ddd;
   margin: 0 0 15px 0;
-  font-family: "Comic Neue", sans-serif;
+  font-family: garamond;
 }
 
 .testimonials .testimonial-item .stars {
@@ -1462,18 +1376,18 @@ section {
 
 .contact .info h4 {
   padding: 0 0 0 60px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #433f39;
-  font-family: "Poppins", sans-serif;
+  color: #444444;
+  font-family: garamond;
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
-  font-size: 14px;
-  color: #7a7368;
+  font-size: 16px;
+  color: #222222;
 }
 
 .contact .info:hover i {
@@ -1596,40 +1510,22 @@ section {
   position: relative;
   padding: 0;
   margin: 0 0 15px 0;
+  text-transform: capitalize;
 }
 
 #footer p {
-  font-size: 15;
+  font-size: 18px;
   font-style: italic;
   padding: 0;
   margin: 0 0 40px 0;
-}
-
-#footer .social-links {
-  margin: 0 0 40px 0;
-}
-
-#footer .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #46423b;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-
-#footer .social-links a:hover {
-  background: #ffb03b;
+  color: chartreuse;
 }
 
 #footer .copyright {
   margin: 0 0 5px 0;
+  color: #18d26e;
+  font-family: dosis;
+  font-size: large;
 }
 
 #footer .credits {
