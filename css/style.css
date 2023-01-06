@@ -440,6 +440,7 @@ textarea.input {
   display: inline-block;
   margin-right: 15px;
   font-size: 12px;
+  font-family: monospace;
 }
 
 .header-links li:last-child {
