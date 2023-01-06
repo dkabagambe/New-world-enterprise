@@ -2085,7 +2085,8 @@ textarea.input {
 .copyright {
   margin-top: 30px;
   display: block;
-  font-size: 12px;
+  font-size: 18px;
+  color: gold;
 }
 
 .footer-payments li {
