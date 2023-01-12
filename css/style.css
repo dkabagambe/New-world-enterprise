@@ -3044,11 +3044,16 @@ body.rtl #qlwapp .qlwapp-box .qlwapp-contact {
 }
 .team h2 {
   text-align: center;
+  text-transform: capitalize;
+  margin: 10px 15px;
+  font-family: garamond;
 }
 
 .team-item img {
   width: 100%;
   overflow: hidden;
+  height: 500px;
+  object-fit: cover;
 }
 
 .team-item .down-content {
